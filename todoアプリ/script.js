@@ -6,7 +6,7 @@ form.addEventListener('submit', (event) => {
     addText(inputEl.value);
 })
 
-// 🔹 初期読み込み（保存されたTodoを復元）
+//  初期読み込み（保存されたTodoを復元）
 loadTodos();
 
 function addText(text, completed = false) {
@@ -37,9 +37,9 @@ function addText(text, completed = false) {
 }
 
 /*
-① li を追加したときに localStorage に保存する
-② 削除したときも保存する
-③ ページ読み込み時に復元する
+ li を追加したときに localStorage に保存する
+ 削除したときも保存する
+ ページ読み込み時に復元する
  */
 
 function saveTodos() {
@@ -63,4 +63,5 @@ function loadTodos() {
             addText(todo.text, todo.completed);
         })
     }
+
 }
